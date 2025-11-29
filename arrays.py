@@ -1,4 +1,113 @@
- Array :An array is a continuous block of memory holding elements of the same type.
+TIME COMPLXITY :
+Time Complexity = How fast an algorithm grows as input size **n** increases.
+It does NOT measure seconds.
+It measures **growth rate**.
+
+---
+Big-O describes the **maximum** time taken as n becomes very large.
+
+Common complexities:
+ Big-O           Name         Fast?                  
+ **O(1)**        Constant      Fastest              
+ **O(log n)**    Logarithmic  Very fast              
+ **O(n)**        Linear       Normal
+ **O(n log n)**  Log-linear  Slower                 
+ **O(n²)**       Quadratic   Slow                   
+ **O(2ⁿ)**      Exponential  Very slow              
+ **O(n!)**       Factorial     Impossible for big n 
+
+---
+
+Time grows directly with size.
+
+
+for x in arr:
+    print(x)
+📈 Diagram:
+
+
+|
+|      /
+|     /
+|    /
+|___/_________  n →
+
+
+
+Nested loops.
+
+```python
+for i in arr:
+    for j in arr:
+        print(i, j)
+```
+
+📈 Diagram:
+
+```
+|
+|        /
+|      /
+|    /
+|  /
+|/_______________  n →
+```
+
+---
+
+Divide input into 2 each time.
+Example: **Binary Search**.
+
+
+while low <= high:
+    mid = (low + high) // 2
+
+
+📈 Diagram:
+
+
+|
+|   __
+|  /
+| /
+|/______________  n →
+
+
+
+
+
+
+Most sorting algorithms (MergeSort, QuickSort average).
+```
+merge_sort(arr)
+
+
+📈 Diagram:
+
+```
+|
+|     /_
+|    / /
+|   / /
+|__/ /__________ n →
+```
+
+---
+
+
+Operation              Time               
+
+ Access array element  **O(1)**           
+ Linear Search          **O(n)**          
+ Binary Search          **O(log n)**       
+ Nested loops           **O(n²)**          
+ Merge Sort             **O(n log n)**     
+ Append in Python list  **O(1) amortized** 
+ Insert in middle        *O(n)**           
+
+AAAAAAAAAAAARRRRRRRRRRRRRRRRRRRRRRRRRRRAAAAAAAAAAAAAAAAAAAAYYYYYYYYYYYYYSSSSSSSSSSSSSSSSS  :
+
+Array :An array is a continuous block of memory holding elements of the same type.
 i.e
 Index:   0   1   2   3   4
 Value:  10  20  30  40  50
