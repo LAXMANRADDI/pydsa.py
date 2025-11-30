@@ -153,3 +153,24 @@ def linear_search(arr, target):
             return i
     return -1
 print(linear_search([10,20,30,40], 30))  # 2
+
+
+SEARCHING TECHNIQUES:
+
+1. Linear Search (O(n))
+
+Check every element until you find the target.
+i.e
+def linear_search(arr, target):
+    for i in range(len(arr)):
+        if arr[i] == target:
+            return i
+    return -1
+
+Example:
+
+linear_search([10, 20, 30, 40], 30)
+# Output: 2
+
+
+---
