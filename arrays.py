@@ -23,7 +23,7 @@ Time grows directly with size.
 
 for x in arr:
     print(x)
-📈 Diagram:
+Diagram:
 
 
 |
@@ -42,7 +42,7 @@ for i in arr:
         print(i, j)
 ```
 
-📈 Diagram:
+Diagram:
 
 ```
 |
@@ -63,7 +63,7 @@ while low <= high:
     mid = (low + high) // 2
 
 
-📈 Diagram:
+Diagram:
 
 
 |
