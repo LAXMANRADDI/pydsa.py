@@ -199,4 +199,21 @@ def binary_search(arr, target):
         else:
             high = mid - 1
 
+    return -1 
+
+
+Example 1: Linear Search
+Q: Find element = 30 in arr = [10, 20, 30, 40, 50]
+Dry Run:
+i=0 → arr[0]=10  ≠30  
+i=1 → arr[1]=20  ≠30  
+i=2 → arr[2]=30  ✓ found
+
+Code:
+def linear_search(arr, x):
+    for i in range(len(arr)):
+        if arr[i] == x:
+            return i
     return -1
+
+print(linear_search([10,20,30,40], 30))
