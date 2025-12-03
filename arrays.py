@@ -243,3 +243,28 @@ def binary_search(arr, x):
             high = mid - 1
             
     return -1
+
+
+Example 3: First Occurrence of x
+arr = [1,2,2,2,3,4], x=2
+Dry Run:
+mid=2 → arr[2]=2 → ans=2 → move left
+mid=0 → arr[0]=1 → move right
+mid=1 → arr[1]=2 → ans=1 → move left
+END → 1
+
+Code:
+def first_occ(arr, x):
+    low, high = 0, len(arr)-1
+    ans = -1
+    while low <= high:
+        mid = (low + high)//2
+        
+        if arr[mid] == x:
+            ans = mid
+            high = mid - 1
+        elif arr[mid] < x:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return ans
