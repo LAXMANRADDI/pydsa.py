@@ -14,9 +14,7 @@ Common complexities:
  **O(n²)**       Quadratic   Slow                   
  **O(2ⁿ)**      Exponential  Very slow              
  **O(n!)**       Factorial     Impossible for big n 
-
 ---
-
 Time grows directly with size.
 
 
