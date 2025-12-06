@@ -35,8 +35,6 @@ for i in arr:
 ```
 
 Diagram:
-
-```
 |
 |        /
 |      /
