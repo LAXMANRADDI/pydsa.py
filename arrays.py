@@ -61,8 +61,6 @@ while low <= high:
 
 
 Diagram:
-
-
 |
 |   __
 |  /
