@@ -128,8 +128,6 @@ def linear_search(arr, target):
             return i
     return -1
 print(linear_search([10,20,30,40], 30))  # 2
-
-
 SEARCHING TECHNIQUES:
 
 1. Linear Search (O(n))
