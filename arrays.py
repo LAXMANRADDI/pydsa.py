@@ -63,12 +63,6 @@ Diagram:
 |  /
 | /
 |/______________  n →
-
-
-
-
-
-
 Most sorting algorithms (MergeSort, QuickSort average).
 ```
 merge_sort(arr)
