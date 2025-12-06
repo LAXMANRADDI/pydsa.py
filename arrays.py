@@ -28,9 +28,6 @@ Diagram:
 |     /
 |    /
 |___/_________  n →
-
-
-
 Nested loops.
 
 ```python
