@@ -69,10 +69,6 @@ merge_sort(arr)
 |    / /
 |   / /
 |__/ /__________ n →
-```
-
----
-
 
 Operation              Time               
 
