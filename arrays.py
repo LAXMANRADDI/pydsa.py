@@ -146,8 +146,6 @@ Example:
 
 linear_search([10, 20, 30, 40], 30)
 # Output: 2
-
-
 ---
 2. Binary Search (O(log n)) — Very Important
  Works only on a SORTED array
