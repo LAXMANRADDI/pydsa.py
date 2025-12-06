@@ -5,7 +5,6 @@ It measures **growth rate**.
 
 ---
 Big-O describes the **maximum** time taken as n becomes very large.
-
 Common complexities:
  Big-O           Name         Fast?                  
  **O(1)**        Constant      Fastest              
