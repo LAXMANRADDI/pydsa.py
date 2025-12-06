@@ -49,9 +49,6 @@ Diagram:
 |  /
 |/_______________  n →
 ```
-
----
-
 Divide input into 2 each time.
 Example: **Binary Search**.
 
