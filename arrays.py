@@ -23,8 +23,6 @@ Time grows directly with size.
 for x in arr:
     print(x)
 Diagram:
-
-
 |
 |      /
 |     /
