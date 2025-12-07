@@ -25,3 +25,19 @@ print_nums(3)
         → print_nums(0) stops
         → print 1
     → print 2
+
+
+Factorial using Recursion
+n! = n × (n-1)!
+
+Code:
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n-1)
+
+Dry-run factorial(4)
+4 * factorial(3)
+    3 * factorial(2)
+        2 * factorial(1)
+            1 * factorial(0)
