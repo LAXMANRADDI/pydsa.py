@@ -1,0 +1,1 @@
+Recursion is used in linked lists, trees, backtracking, DP, quicksort, mergesort, etc.
