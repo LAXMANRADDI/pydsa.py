@@ -88,4 +88,11 @@ def hanoi(n, src, aux, dest):
         return 
     hanoi(n-1, src, dest, aux)
     print(f"Move disk {n} from {src} to {dest}")
-    hanoi(n-1, aux, src, dest)
+    hanoi(n-1, aux, src, dest) 
+
+
+   Recursion            vs       Iteration     
+ Function calls itself          Loop repeats  
+ Uses call stack                Uses no stack 
+ Elegant & easy                 Faster        
+ Risk of stack overflow         No risk       
