@@ -104,5 +104,62 @@ Space Complexity:
 | Needs extra space     | In-place        |
 | Stable                | Not stable      |
 | Good for linked lists | Good for arrays |
+--
+1. **Sorting Large Data (External Sorting)**
+Merge sort is used when data **does not fit in main memory (RAM)**.
+Data is stored on disk
+Small chunks are sorted
+Merged efficiently
+Used in:
+* Database systems
+* File systems
+* Big data processing
+---
+2. Sorting Linked Lists
+* No random access needed
+* Splitting linked list is easy
+* Merging is simple (pointer changes)
+Quick sort is NOT good for linked lists.
+---
+3. **Stable Sorting Requirement**
+Merge sort is a **stable algorithm**.
+Used when:
+* Order of equal elements must be preserved
+* Sorting records with multiple keys
+Example:
+Sort students by **marks**, then by **roll number**.
+---
+4.Used in Inversion Count Problems
+Merge sort helps in:
+* Counting inversions in an array
+* Finding how far an array is from being sorted
+Common in competitive programming.
+---
+5. Used in Divide & Conquer Problems
+Merge sort is a base for:
+* Closest pair of points
+* Finding median of two sorted arrays
+* Range query problems
+---
+6. Used in Multi-core / Parallel Processing
+Merge sort can be parallelized easily.
+Used in:
+* Multi-threaded programs
+* Distributed systems
+---
 
+7. Used in Databases
+* SQL `ORDER BY` (internally uses merge-based techniques)
+* Sorting records during joins
+---
+
+8. Used When Worst-Case Time Must Be Guaranteed
+
+Merge sort always gives:
+O(n log n)
+```
+No bad cases.
+Used in:
+* Real-time systems
+* Critical applications
 
