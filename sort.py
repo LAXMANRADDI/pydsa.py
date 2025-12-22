@@ -163,3 +163,166 @@ Used in:
 * Real-time systems
 * Critical applications
 
+Great 👍
+Let’s move to the next logical topic after Merge Sort:
+
+🚀 QUICK SORT
+
+This is one of the most important sorting algorithms for exams, interviews, and real systems.
+
+
+---
+
+✅ 1. What is Quick Sort?
+
+Quick Sort is also a Divide and Conquer algorithm.
+
+Idea:
+
+1. Choose a pivot element
+
+
+2. Rearrange array so that:
+
+Elements smaller than pivot → left
+
+Elements greater than pivot → right
+
+
+
+3. Recursively apply quick sort on left & right parts
+
+
+
+
+---
+
+✅ 2. Why is it called “Quick” Sort?
+
+Very fast in practice
+
+Uses in-place sorting (no extra array)
+
+Average time is O(n log n)
+
+
+That’s why it’s widely used.
+
+
+---
+
+✅ 3. Quick Sort Flow (Example)
+
+Array:
+
+[10, 7, 8, 9, 1, 5]
+
+Choose pivot = 5
+
+Left  : [1]
+Pivot : 5
+Right : [10, 7, 8, 9]
+
+Apply quick sort again on left & right.
+
+Final sorted array:
+
+[1, 5, 7, 8, 9, 10]
+
+
+---
+
+✅ 4. Algorithm (Steps – Exam Ready)
+
+QuickSort(arr, low, high):
+    if low < high:
+        p = partition(arr, low, high)
+        QuickSort(arr, low, p-1)
+        QuickSort(arr, p+1, high)
+
+
+---
+
+✅ 5. Partition Logic (Very Important)
+
+We place pivot at its correct position.
+
+Lomuto Partition (simple)
+
+def partition(arr, low, high):
+    pivot = arr[high]
+    i = low - 1
+
+    for j in range(low, high):
+        if arr[j] <= pivot:
+            i += 1
+            arr[i], arr[j] = arr[j], arr[i]
+
+    arr[i+1], arr[high] = arr[high], arr[i+1]
+    return i + 1
+
+
+---
+
+✅ 6. Quick Sort Code (Complete)
+
+def quick_sort(arr, low, high):
+    if low < high:
+        p = partition(arr, low, high)
+        quick_sort(arr, low, p-1)
+        quick_sort(arr, p+1, high)
+
+arr = [10, 7, 8, 9, 1, 5]
+quick_sort(arr, 0, len(arr)-1)
+print(arr)
+
+
+---
+
+✅ 7. Dry Run (Short)
+
+arr = [4, 2, 6, 9, 2]
+pivot = 2
+
+After partition:
+[2, 2, 4, 6, 9]
+
+Recursive calls continue.
+
+
+---
+
+✅ 8. Time & Space Complexity
+
+Case	Time
+
+Best	O(n log n)
+Average	O(n log n)
+Worst	O(n²) (already sorted array)
+
+
+Space Complexity:
+➡ O(log n) (recursive stack)
+
+
+---
+
+✅ 9. Merge Sort vs Quick Sort
+
+Merge Sort	Quick Sort
+
+Extra space O(n)	In-place
+Always O(n log n)	Worst O(n²)
+Stable	Not stable
+Good for linked list	Best for arrays
+
+
+
+---
+
+✅ 10. Applications of Quick Sort
+
+✔ Used in C / C++ standard libraries
+✔ Best for in-memory sorting
+✔ Used in system-level programming
+✔ Competitive coding favorite
