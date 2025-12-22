@@ -302,27 +302,14 @@ Worst	O(n²) (already sorted array)
 
 
 Space Complexity:
-➡ O(log n) (recursive stack)
-
-
----
-
-✅ 9. Merge Sort vs Quick Sort
-
-Merge Sort	Quick Sort
-
-Extra space O(n)	In-place
-Always O(n log n)	Worst O(n²)
-Stable	Not stable
-Good for linked list	Best for arrays
+O(log n) (recursive stack)
 
 
 
----
 
-✅ 10. Applications of Quick Sort
 
-✔ Used in C / C++ standard libraries
-✔ Best for in-memory sorting
-✔ Used in system-level programming
-✔ Competitive coding favorite
+Applications of Quick Sort
+Used in C / C++ standard libraries
+Best for in-memory sorting
+Used in system-level programming
+Competitive coding favorite
